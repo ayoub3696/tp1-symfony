@@ -1,3 +1,4 @@
+
 Question 1 : La commande symfony check:requirements vérifie que PHP et ses extensions sont compatibles avec Symfony. Les avertissements signalent les éventuels problèmes qui peuvent affecter le fonctionnement de l’application.
 
 Question 2
@@ -14,3 +15,4 @@ Avec la commande php bin/console debug:router, j'ai vu qu'il y a plusieurs route
 
 Question 6
 loop.index donne le numéro du tour de la boucle en commençant à 1 (1, 2, 3...). loop.index0 donne aussi le numéro du tour mais en commençant à 0 (0, 1, 2...).
+
