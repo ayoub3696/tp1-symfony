@@ -20,7 +20,7 @@ class Article
     #[ORM\Column(type: Types::TEXT)]
     private ?string $contenu = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 100)]
     private ?string $auteur = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]

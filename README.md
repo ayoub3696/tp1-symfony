@@ -16,3 +16,8 @@ Avec la commande php bin/console debug:router, j'ai vu qu'il y a plusieurs route
 Question 6
 loop.index donne le numéro du tour de la boucle en commençant à 1 (1, 2, 3...). loop.index0 donne aussi le numéro du tour mais en commençant à 0 (0, 1, 2...).
 
+Question 7
+Le fichier de migration contient principalement une requête CREATE TABLE article, qui permet de créer la table article dans la base de données avec ses différentes colonnes.
+
+Question 8
+Le ParamConverter permet à Symfony de convertir automatiquement l'identifiant de l'URL en objet Article. Il évite d'effectuer manuellement une recherche avec le Repository et renvoie automatiquement une erreur 404 si l'article n'existe pas.
