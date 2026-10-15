@@ -21,3 +21,29 @@ Le fichier de migration contient principalement une requête CREATE TABLE articl
 
 Question 8
 Le ParamConverter permet à Symfony de convertir automatiquement l'identifiant de l'URL en objet Article. Il évite d'effectuer manuellement une recherche avec le Repository et renvoie automatiquement une erreur 404 si l'article n'existe pas.
+
+TP 2 
+question 1 :
+Créer un FormType dans une classe séparée permet de :
+- Réutiliser le formulaire dans plusieurs contrôleurs.
+- Séparer les responsabilités et rendre le code plus propre.
+- Faciliter la maintenance et les modifications du formulaire.
+
+Questiion 2 :
+Le cycle de vie d'un formulaire Symfony se déroule en 5 étapes :
+1. Création du formulaire : Symfony crée le formulaire avec createForm().
+2. Affichage : le formulaire vide est affiché à l'utilisateur avec form_start() et form_widget().
+3. Soumission : l'utilisateur remplit le formulaire et clique sur Envoyer.
+4. Validation : Symfony vérifie les données saisies avec isSubmitted() et isValid().
+5. Enregistrement : si les données sont valides, Doctrine enregistre l'objet en base de données avec persist() et flush().
+
+Question 3 :
+- form_row() : affiche automatiquement le label, le champ et les erreurs.
+- form_label() + form_widget() : permet de personnaliser séparément le label et le champ.
+Quand les utiliser ?
+- form_row() : pour créer rapidement un formulaire simple.
+- form_label() + form_widget() : pour personnaliser la mise en page et le design du formulaire.
+
+Question 4 :
+Validation côté client (HTML5, JavaScript) : vérifie les données directement dans le navigateur et affiche rapidement les erreurs.
+Validation côté serveur (Symfony Validator) : vérifie les données sur le serveur avant de les enregistrer dans la base de données.
