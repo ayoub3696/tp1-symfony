@@ -47,3 +47,16 @@ Quand les utiliser ?
 Question 4 :
 Validation côté client (HTML5, JavaScript) : vérifie les données directement dans le navigateur et affiche rapidement les erreurs.
 Validation côté serveur (Symfony Validator) : vérifie les données sur le serveur avant de les enregistrer dans la base de données.
+
+Question 5 :
+- La migration ajoute une colonne contenant l'identifiant de l'entité liée et une contrainte FOREIGN KEY pour créer la relation entre les deux tables.
+- Qu'est-ce qu'une clé étrangère ?
+Une clé étrangère (FOREIGN KEY) est une colonne qui référence la clé primaire d'une autre table afin de relier les deux tables et garantir la cohérence des données.
+
+Question 6 :
+createFormBuilder() :
+- Avantages : rapide et simple pour créer un petit formulaire directement dans le contrôleur.
+- Inconvénients : le contrôleur devient plus chargé et le formulaire est difficile à réutiliser.
+FormType séparé (make:form) :
+- Avantages : code mieux organisé, réutilisable et facile à maintenir.
+- Inconvénients : nécessite de créer une classe supplémentaire.
