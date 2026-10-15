@@ -60,3 +60,11 @@ createFormBuilder() :
 FormType séparé (make:form) :
 - Avantages : code mieux organisé, réutilisable et facile à maintenir.
 - Inconvénients : nécessite de créer une classe supplémentaire.
+
+Question 7 :
+Il ne faut pas appeler persist() lors de la modification d'une entité existante, car Doctrine gère automatiquement les modifications des entités déjà chargées.
+
+Question 8 :
+Une attaque CSRF (Cross-Site Request Forgery) consiste à forcer un utilisateur connecté à effectuer une action sans son accord.
+Pourquoi ne pas utiliser GET pour supprimer ?
+Une requête GET peut être déclenchée facilement par un lien ou une image, ce qui risque de supprimer une ressource sans confirmation de l'utilisateur.
